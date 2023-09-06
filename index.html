@@ -12,34 +12,57 @@
     ></script>
 	<!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
 	<script type="application/ld+json">
-		{
-		"@context": "http://schema.org",
-		"@type": "LocalBusiness",
-		"name": "Nina Carducci",
-		"image": "https://nina-carducci.github.io/assets/images/nina.png",
-		"telephone": "05 56 67 78 89",
-		"address": {
-			"@type": "PostalAddress",
-			"streetAddress": "68 avenue Alsace-Lorraine",
-			"addressLocality": "Bordeaux",
-			"addressRegion": "Gironde",
-			"addressCountry": "France",
-			"postalCode": "33200"
-		},
-		"openingHoursSpecification": {
-			"@type": "OpeningHoursSpecification",
-			"dayOfWeek": {
-			"@type": "DayOfWeek",
-			"name": "Lundi au vendredi"
-			},
-			"opens": "10:00",
-			"closes": "19:00"
-		},
-		"url": "https://nina-carducci.github.io/"
-		}
-	</script>
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/style.min.css">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Nina Carducci",
+      "image": "https://nina-carducci.github.io/assets/images/nina.png",
+      "telephone": "+33 5 56 67 78 89",
+      "priceRange": "50€ 400€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "68 avenue Alsace-Lorraine",
+        "addressLocality": "Bordeaux",
+        "addressRegion": "Gironde",
+        "addressCountry": "France",
+        "postalCode": "33200"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Monday",
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Tuesday",
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Wednesday",
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Thursday",
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "https://schema.org/Friday",
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ],
+      "url": "https://nina-carducci.github.io/"
+    }
+    </script>    
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- 
@@ -164,6 +187,8 @@
           <img
             src="./assets/images/nina.webp"
             class="d-block w-100 h-auto"
+            width="1460px"
+            height="1456px"
             alt="Photo de Nina Carducci, Photographe"
             title="Photographe Nina Carducci"
             loading="lazy"
@@ -380,5 +405,6 @@
     <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
     <script src="./assets/maugallery.min.js" defer></script>
     <script src="./assets/scripts.min.js" defer></script>
+    <link rel="stylesheet" href="./assets/style.min.css" defer>
   </body>
 </html>
